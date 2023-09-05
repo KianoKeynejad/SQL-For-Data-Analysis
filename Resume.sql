@@ -19,7 +19,7 @@ AND Masterkey LIKE '292%'
 
 
 UPDATE Example
-SET	[Patient's First Name]	= Pers..PsnFirst,	[Patient's Late Name]	=  Pers.PsnLaSt,	[Patient's Date of Birth]	=  Pers.Psnous,	[Client Name]	= Pers.PcPPracticeName
+SET	[Patient's First Name]	= Pers.PsnFirst,	[Patient's Late Name]	=  Pers.PsnLaSt,	[Patient's Date of Birth]	=  Pers.Psnous,	[Client Name]	= Pers.PcPPracticeName
 FROM [AggregateDatabase1].dbo.[Example_Table] Pers
 JOIN  Scorecard.Example  samp
 ON  Pers.MasterKey	=   samp.MRN
